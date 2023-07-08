@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        
+        <script src="https://kit.fontawesome.com/04b5b0036c.js" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous" defer></script>
+        <script src="./src/js/index.js" type="module" defer></script>
+
+        <title>DreamSponsor</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar sidenav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Olá, Elizabeth!</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-grow-1 pe-3 nav-links">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-house"></i>
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        Investimentos
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        Histórico
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-money-bill-transfer"></i>
+                                        Transações previstas
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link color--red" href="#">
+                                        <i class="fa-solid fa-arrow-right-from-bracket color--red"></i>
+                                        Sair
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="container-logo-sidenav">
+                                <img class="logo-sidenav" src="../assets/images/logo-128px.png" width="56px" alt="DreamSponsor logo" title="DreamSponsor">
+                                DreamSponsor - 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="header-saldo">
+                <h3>
+                    Saldo
+                    <i id="mudar-visibilidade" class="fa-regular fa-eye" data-toggle="tooltip" title="Ocultar conteúdo"></i>
+                </h3>
+
+                <p id="saldo" data-muda-visibilidade="R$ ••••">R$ 1515</p>
+
+                Última atualização: <span id="ultima-atualizacao">00:43</span>
+            </div>
+
+            <div class="card-list my-4">
+                <div class="container-card">
+                    <div class="card mx-4">
+                        <img src="../assets/images/investimento-128px.png" class="card-img-top my-2" alt="Investimentos e rendimento">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Investimentos</h5>
+
+                            <ul class="lista-income-outcome">
+                                <li class="income">R$ 47,59 CVCB3</li>
+                                <li class="outcome">R$ 12,90 PETZ3</li>
+                                <li class="income">R$ 86,12 Tesouro direto</li>
+                                <li>...</li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <p class="card-text m-0"><small class="text-body-secondary">Última atualização: há 3m</small></p>
+                                <button type="button" class="btn btn-outline-primary">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-card">
+                    <div class="card mx-4">
+                        <img src="../assets/images/history-book-128px.png" class="card-img-top my-2" alt="Caderno de anotações">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Histórico de transações</h5>
+
+                            <ul class="p-0">
+                                <li>R$ 30,25 Pastelaria (01/08)</li>
+                                <li>R$ 99,27 Conta de luz (28/07)</li>
+                                <li>R$ 65,85 Conta de água (28/07)</li>
+                                <li>...</li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <p class="card-text m-0"><small class="text-body-secondary">Última atualização: há 3m</small></p>
+                                <button type="button" class="btn btn-outline-primary">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-card">
+                    <div class="card mx-4">
+                        <img src="../assets/images/transaction-128px.png" class="card-img-top my-2" alt="Transações">
+    
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Transações previstas</h5>
+
+                            <ul class="lista-income-outcome">
+                                <li class="income">R$ 5.678,90 Sálario (05/08)</li>
+                                <li class="outcome">R$ 115,90 Conta de telefone (15/08)</li>
+                                <li class="outcome">R$ 1.780,00 Babá (16/08)</li>
+                                <li>...</li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <p class="card-text m-0"><small class="text-body-secondary">Última atualização: há 3m</small></p>
+                                <button type="button" class="btn btn-outline-primary">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="text-center">
+                DreamSponsor - Todos os direitos reservados - 2023
+            </p>
+        </footer>
+    </body>
+</html>

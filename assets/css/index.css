@@ -1,0 +1,141 @@
+:root {
+  --color-black--80: #535251;
+  --color-blue--spark: #7A9AFF;
+  --color-blue-medium: #6884DE;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.color--red {
+  color: red !important;
+}
+
+header {
+  position: relative;
+  background-color: var(--color-blue--spark);
+}
+header .sidenav {
+  position: relative;
+  z-index: 1;
+}
+header .sidenav .navbar-toggler {
+  border-width: 2px;
+}
+header .sidenav .nav-links {
+  height: calc(100vh - 68px - 56px - 32px);
+  overflow-y: auto;
+}
+header .sidenav .nav-links .nav-item {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+header .sidenav .nav-links .nav-item i {
+  position: absolute;
+  height: 1.1rem;
+  top: calc(50% - 0.55rem);
+  left: 0;
+  color: var(--color-black--80);
+}
+header .sidenav .container-logo-sidenav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 4px;
+  width: calc(100% - 32px);
+  font-size: 12px;
+}
+header .sidenav .container-logo-sidenav img {
+  width: 56px;
+  height: 56px;
+}
+
+main {
+  padding-bottom: 32px;
+}
+main .header-saldo {
+  background-color: var(--color-blue--spark);
+  width: 100%;
+  height: 210px;
+  padding: 0 72px 56px;
+  color: white;
+  font-size: 14px;
+}
+main .header-saldo #mudar-visibilidade {
+  font-size: 22px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .header-saldo #mudar-visibilidade:hover {
+  background-color: var(--color-blue-medium);
+}
+main .header-saldo #saldo {
+  font-size: 48px;
+}
+main .card-list {
+  display: flex;
+  justify-content: space-around;
+}
+main .card-list .container-card {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+main .card-list .container-card .card {
+  width: 500px;
+}
+main .card-list .container-card .card img {
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+}
+main .card-list .container-card .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 771px) {
+  main .card-list {
+    display: block;
+  }
+  main .card-list .container-card {
+    max-width: none;
+  }
+  main .card-list .card {
+    margin-bottom: 24px;
+  }
+}
+main .lista-income-outcome {
+  padding: 0;
+}
+main .lista-income-outcome .income {
+  color: green;
+}
+main .lista-income-outcome .income::before {
+  content: "+ ";
+}
+main .lista-income-outcome .outcome {
+  color: red;
+}
+main .lista-income-outcome .outcome::before {
+  content: "- ";
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
